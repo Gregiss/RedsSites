@@ -18,11 +18,11 @@ var projects = [];
 var fotosUpload = [{foto: "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.23_-_16.22.48.19.png"}, {foto: "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.2.13.png"}, {foto : "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.2.png"}, {foto : "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.2.3.png"}];
 var totalProjects = 0;
 
-function addProject(title, fotos, descricao){
-    var newProject = {title: title, fotos: fotos, descricao: descricao};
+function addProject(title, fotos, descricao, link){
+    var newProject = {title: title, fotos: fotos, descricao: descricao, link: link};
     projects.push(newProject);
     totalProjects++;
-    $("#project .before").before("<div class='close'><i class='fas fa-times'></i></div> <div id='project"+totalProjects+"' class='project'><h1>"+title+"</h1> <p>"+descricao+"</p> <div class='scroller'><div class='before'></div></div></div>")
+    $("#project .before").before("<div class='close'><i class='fas fa-times'></i></div> <div id='project"+totalProjects+"' class='project'><h1>"+title+"</h1> <p>"+descricao+"</p> <a href='"+link+"'> Mod Here </a> <div class='scroller'><div class='before'></div></div></div>")
     for(var i = 0; i < projects[totalProjects - 1].fotos.length; i++){
         $("#project" + totalProjects + " .scroller .before").before("<div class='foto'><img src='"+projects[totalProjects -1 ].fotos[i].foto+"'/></div></div>")
     }
@@ -46,5 +46,5 @@ function showPhotos(){
 //var fotos = [{foto: "foto1.png"}, {foto: "foto2.png"}];
 //Exemplo addProjet("Mod Br", fotos, "descricao");
 
-addProject("World Survivor", fotosUpload, "You are a normal citizen, until your rebel scientist friend calls you to get in his lab. When you get there he says that civil protection is getting dangerous, and give you a hev suit and a gun, and you must reach Black Mesa East. I want to add more chapters after Black Mesa East.");
+addProject("World Survivor", fotosUpload, "You are a normal citizen, until your rebel scientist friend calls you to get in his lab. When you get there he says that civil protection is getting dangerous, and give you a hev suit and a gun, and you must reach Black Mesa East. I want to add more chapters after Black Mesa East.", "https://www.moddb.com/mods/world-survival");
 fotosUpload = [{foto: "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.23_-_16.22.48.19.png"}, {foto: "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.2.13.png"}, {foto : "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.2.png"}, {foto : "https://media.moddb.com/cache/images/mods/1/44/43264/thumb_620x2000/Half-Life_2_Screenshot_2019.07.2.3.png"}];
