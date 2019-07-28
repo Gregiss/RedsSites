@@ -22,7 +22,7 @@ function addProject(title, fotos, descricao, link){
     var newProject = {title: title, fotos: fotos, descricao: descricao, link: link};
     projects.push(newProject);
     totalProjects++;
-    $("#project .before").before("<div class='close'><i class='fas fa-times'></i></div> <div id='project"+totalProjects+"' class='project'><h1>"+title+"</h1> <p>"+descricao+"</p> <a href='"+link+"'> Mod Here </a> <div class='scroller'><div class='before'></div></div></div>")
+    $("#project .before").before("<div class='close'><i class='fas fa-times'></i></div> <div id='project"+totalProjects+"' class='project'><h1>"+title+"</h1> <p>"+descricao+"</p> <a href='"+link+"'> "+link+" </a> <div class='scroller'><div class='before'></div></div></div>")
     for(var i = 0; i < projects[totalProjects - 1].fotos.length; i++){
         $("#project" + totalProjects + " .scroller .before").before("<div class='foto'><img src='"+projects[totalProjects -1 ].fotos[i].foto+"'/></div></div>")
     }
