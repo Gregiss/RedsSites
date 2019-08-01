@@ -32,12 +32,12 @@ body{
 header{
     width: 100%;
     position: fixed;
-    padding: 20px;
     height: auto;
     background: #15151515;
     text-align: center;
     text-transform: uppercase;
     z-index: 50;
+    top: 17px;
 }
 
 .background{
