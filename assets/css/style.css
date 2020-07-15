@@ -199,3 +199,25 @@ a{
 .close_active{
     opacity: 1;
 }
+
+
+@media screen and (max-width: 660px){
+	.tabs{
+		position: relative;
+		top: 90vh;
+		float: left;
+		display: inline-block;
+		margin-left: 25%;
+		left: -15%;
+	}
+	.active::after{
+		content: '';
+		width: 400%;
+		height: 20px;
+		position: absolute;
+		left: 0px;
+		top: 25px;
+		border-left: 2px solid transparent;
+		border-bottom: 2px solid #fb7e14;
+	}
+}
