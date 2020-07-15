@@ -133,7 +133,7 @@ a{
 }
 
 .project{
-    width: 100%;
+    width: 70vw;
     background: #151515;
     max-width: 900px;
     padding: 40px;
@@ -219,5 +219,8 @@ a{
 		top: 25px;
 		border-left: 2px solid transparent;
 		border-bottom: 2px solid #fb7e14;
+	}
+	.project{
+	    width: 70vw;
 	}
 }
