@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86e22e1a.chunk.css",
+    "main.js": "/static/js/main.c9c330b7.chunk.js",
+    "main.js.map": "/static/js/main.c9c330b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6e136cfa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6e136cfa.js.map",
+    "static/js/2.b3f63666.chunk.js": "/static/js/2.b3f63666.chunk.js",
+    "static/js/2.b3f63666.chunk.js.map": "/static/js/2.b3f63666.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e23f18636204dbd74c337ba2b7df79d2.js": "/precache-manifest.e23f18636204dbd74c337ba2b7df79d2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.86e22e1a.chunk.css.map": "/static/css/main.86e22e1a.chunk.css.map",
+    "static/js/2.b3f63666.chunk.js.LICENSE.txt": "/static/js/2.b3f63666.chunk.js.LICENSE.txt",
+    "static/media/back.jpg": "/static/media/back.265d6a7a.jpg",
+    "static/media/steam_icon.png": "/static/media/steam_icon.429fb792.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e136cfa.js",
+    "static/js/2.b3f63666.chunk.js",
+    "static/css/main.86e22e1a.chunk.css",
+    "static/js/main.c9c330b7.chunk.js"
+  ]
+}
